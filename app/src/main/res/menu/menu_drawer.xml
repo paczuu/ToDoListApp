@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_tasks"
+        android:title="Zadania" />
+    <item
+        android:id="@+id/motivation"
+        android:title="Motywacja" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Ustawienia" />
+</menu>

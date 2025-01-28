@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Settings" />
+
+    <Switch
+        android:id="@+id/notifications_switch"
+        android:layout_width="295dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Notifications" />
+
+    <Button
+        android:id="@+id/clear_all_tasks_button"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Clear All Tasks" />
+
+</LinearLayout>

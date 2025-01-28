@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">To Do List App kotlin</string>
+    <string name="edit_task">Edytuj</string>
+    <string name="delete_task">Usuń</string>
+</resources>
