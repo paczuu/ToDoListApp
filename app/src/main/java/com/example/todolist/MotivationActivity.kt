@@ -37,7 +37,7 @@ class MotivationActivity : AppCompatActivity() {
     private fun requestAudioFocus() {
         val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         val result = audioManager.requestAudioFocus(
-            null, // Nie potrzebujemy AudioManager.OnAudioFocusChangeListener
+            null,
             AudioManager.STREAM_MUSIC,
             AudioManager.AUDIOFOCUS_GAIN_TRANSIENT
         )

@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.example.todolist.databinding.ActivityTaskDetailsBinding
 
 class TaskDetailsActivity : AppCompatActivity() {
@@ -30,7 +29,7 @@ class TaskDetailsActivity : AppCompatActivity() {
                 binding.taskDescription.text = taskItem.description
 
                 binding.editButton.setOnClickListener {
-                    // Open AddEditTaskFragment for editing
+                    // Otworzenie fragmentu edycji zadania
                     AddEditTaskFragment.newInstance(taskItem.id).show(supportFragmentManager, "EDIT_TASK")
                 }
 

@@ -13,7 +13,7 @@
         android:textSize="35dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
-        android:text="Settings" />
+        android:text="Ustawienia" />
 
     <Switch
         android:id="@+id/notifications_switch"
@@ -22,7 +22,7 @@
         android:layout_marginTop="60dp"
         android:textSize="20dp"
         android:layout_gravity="center_horizontal"
-        android:text="Notifications" />
+        android:text="Powiadomienia" />
 
     <Button
         android:id="@+id/clear_all_tasks_button"
@@ -30,6 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:text="Clear All Tasks" />
+        android:text="Usuń wszystkie zdania" />
 
 </LinearLayout>

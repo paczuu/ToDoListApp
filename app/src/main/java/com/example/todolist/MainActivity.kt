@@ -102,18 +102,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Utworzenie cyklicznej pracy dla WorkManagera
     private fun setupWorkManager() {
         val workRequest = PeriodicWorkRequestBuilder<DailyTaskCheckWorker>(15, TimeUnit.MINUTES)
             .setConstraints(
                 Constraints.Builder()
-                    .setRequiredNetworkType(NetworkType.NOT_REQUIRED) // No network required
+                    .setRequiredNetworkType(NetworkType.NOT_REQUIRED)
                     .build()
             )
             .build()
 
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-            "DailyTaskCheck", // Unique work name
-            ExistingPeriodicWorkPolicy.UPDATE, // Update existing work if it exists
+            "DailyTaskCheck",
+            ExistingPeriodicWorkPolicy.UPDATE,
             workRequest
         )
     }
